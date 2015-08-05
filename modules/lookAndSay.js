@@ -1,10 +1,10 @@
 module.exports = {
-    say: function(value){
+    say: function (value) {
 
-        if(!value){
+        if (!value) {
             return false;
         }
-        if(value.length === 1){
+        if (value.length === 1) {
             return '1'+value;
         }
 
@@ -13,7 +13,7 @@ module.exports = {
 
         for (var i = 0; i < value.length; i++) {
 
-            if(value[i] !== value[i+1]){
+            if (value[i] !== value[i+1]) {
                 result += count+''+value[i];
                 count = 0;
             }
@@ -23,8 +23,8 @@ module.exports = {
         return result;
     },
 
-    repeat: function(repeat){
-        if(!repeat){
+    repeat: function (repeat) {
+        if (!repeat) {
             return false;
         }
 
@@ -36,7 +36,7 @@ module.exports = {
         return result;
     },
 
-    startWith: function(startChar){
+    startWith: function (startChar) {
         this.startChar = startChar;
         return this;
     }
